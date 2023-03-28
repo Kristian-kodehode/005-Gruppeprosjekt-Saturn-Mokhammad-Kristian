@@ -22,3 +22,20 @@ body {
 main {
   max-width: 1400px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  gap: 1rem;
+  margin-right: 10px;
+}
