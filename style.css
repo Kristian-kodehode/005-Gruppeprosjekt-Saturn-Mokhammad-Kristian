@@ -1,0 +1,24 @@
+:root {
+  --saturn-sand: #bda77d;
+  --satur-white: #f3ebdb;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: var(--saturn-sand);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--satur-white);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  max-width: 1400px;
+}
