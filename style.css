@@ -297,11 +297,20 @@ The footer contains a horizon image of the earth below Saturn.
 And the floating astronaut hovers with a simple animation + transform set to infinite.
 */
 
-#astronaut {
+.astronaut-w-hand {
   width: 150px;
   margin-left: 500px;
   animation: astro infinite 10s linear;
   position: relative;
+}
+.astronaut-w-hand i {
+  font-size: 40px;
+  color: aliceblue;
+  opacity: 0;
+  margin: 0;
+}
+.astronaut-w-hand:hover i {
+  opacity: 1;
 }
 
 @keyframes astro {
