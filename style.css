@@ -259,3 +259,19 @@ span {
 }
 
 /* SECTION 4 End  */
+
+#astronaut {
+  width: 150px;
+  margin-left: 500px;
+  animation: astro infinite 10s linear;
+  position: relative;
+}
+
+@keyframes  astro {
+  0%   {rotate: 0deg; left:0px; right: 0px; top:0px;}
+  25%  { rotate: 50deg; left:200px;  top:0px;}
+  50%  { rotate: 0deg; left:300px; top:100px;}
+  75%  {rotate: -80deg;left:200px; top:200px;}
+  100% {rotate: 0deg; left:0px; top:0px;}
+
+}
