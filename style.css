@@ -71,27 +71,9 @@ a {
   cursor: pointer;
 }
 
-li a {
-  position: relative;
-  text-decoration: none;
-  color: azure;
-  margin: 10px;
-}
-
-li a::after {
-  content: "";
-  position: absolute;
-  background-color: #bda77d;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -3px;
-  transition: 0.5s;
-}
-
-li a:hover:after {
-  width: 100%;
-}
+/* HEADER / NAV -
+Made a nice underline hover effect on the nav items.
+*/
 
 header {
   position: fixed;
@@ -121,6 +103,27 @@ nav {
 
 ul {
   list-style-type: none;
+}
+li a {
+  position: relative;
+  text-decoration: none;
+  color: azure;
+  margin: 10px;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  background-color: #bda77d;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+
+li a:hover:after {
+  width: 100%;
 }
 
 /* Section0 start -
@@ -294,7 +297,10 @@ Saturn Historical Events spread across quite a small footprint.
 
 /* FOOTER Start -
 The footer contains a horizon image of the earth below Saturn.
-And the floating astronaut hovers with a simple animation + transform set to infinite.
+And the floating astronaut hovers with a animation + transform set to infinite.
+He also gives you a peace sign when hovering over him. We did this by putting
+astronaut and icon inside a class so they stick together, set icon to opacity 0 by 
+default and on hover set opacity to 1.
 */
 
 .astronaut-w-hand {
@@ -309,6 +315,7 @@ And the floating astronaut hovers with a simple animation + transform set to inf
   opacity: 0;
   margin: 0;
 }
+
 .astronaut-w-hand:hover i {
   opacity: 1;
 }
