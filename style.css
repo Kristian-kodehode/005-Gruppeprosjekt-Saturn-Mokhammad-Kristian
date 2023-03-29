@@ -17,25 +17,137 @@ h2 {
 body {
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 a {
+  position: relative;
   text-decoration: none;
-  color: white;
+  color: azure;
+  margin: 10px;
 
 }
+
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #bda77d;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
 
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: black;
+}
+
+#logo {
+  margin-left: 20px;
+  width: 130px;
 }
 
 .items {
   display: flex;
   gap: 1rem;
-  margin-right: 10px;
+  margin-right: 20px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+/* Section0 start */
+
+.section-0 {
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  background-color: black;
+
+}
+
+.textmain {
+ position: absolute;
+ width: 490px;
+ margin-left: 100px;
+
+}
+
+#mainimg {
+  margin-left: auto;
+} 
+
+/* Section0 end */
+
+/* Section 2 start */
+
+.section-2 {
+  padding: 120px;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  margin: 20px;
+
+}
+
+span {
+  font-weight: bolder;
+}
+
+#imgsat { 
+  width: 400px;
+  transition: 0.5s;
+  filter: blur(0.4px);
+}
+
+#imgsat:hover {
+  width: 600px;
+}
+
+.undertext {
+  color: azure;
+  position: absolute;
+  display: flex;
+  margin-top: 380px;
+  gap: 5rem;
+  justify-content: center;
+  
+}
+
+.utext {
+display: flex;
+flex-direction: column; 
+text-align: center;
+font-size: larger;
+  
+}
+
+#infcolor {
+  color: #BDA77D;
+  font-weight: 800;
+  font-size: small;
+}
+
+/* section-2 end */
+
