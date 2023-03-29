@@ -154,6 +154,9 @@ Image is set to width 100% to cover the entire width of the page.
   padding: 16px;
   grid-gap: 24px 92px;
 }
+.grid-item h4 {
+  font-size: ;
+}
 
 .grid-item {
   padding: 8px;
