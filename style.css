@@ -68,13 +68,17 @@ section {
 }
 
 a {
+  cursor: pointer;
+}
+
+li a {
   position: relative;
   text-decoration: none;
   color: azure;
   margin: 10px;
 }
 
-a::after {
+li a::after {
   content: "";
   position: absolute;
   background-color: #bda77d;
@@ -85,7 +89,7 @@ a::after {
   transition: 0.5s;
 }
 
-a:hover:after {
+li a:hover:after {
   width: 100%;
 }
 
@@ -259,7 +263,7 @@ Saturn Historical Events spread across quite a small footprint.
 */
 .section-4-txt {
   padding: 16px;
-  width: 70%;
+  width: 90%;
   height: 420px;
   overflow: scroll;
   border-bottom: 2px solid var(--satur-white);
