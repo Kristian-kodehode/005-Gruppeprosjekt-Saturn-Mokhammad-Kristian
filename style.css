@@ -278,6 +278,10 @@ Saturn Historical Events spread across quite a small footprint.
   margin-bottom: 24px;
 }
 
+.section-4 {
+  margin-bottom: 200px;
+}
+
 /* .section-4 img {
   width: 100%;
 } */
@@ -296,11 +300,31 @@ And the floating astronaut hovers with a simple animation + transform set to inf
   position: relative;
 }
 
-@keyframes  astro {
-  0%   {rotate: 0deg; left:0px; right: 0px; top:0px;}
-  25%  { rotate: 50deg; left:200px;  top:0px;}
-  50%  { rotate: 0deg; left:300px; top:100px;}
-  75%  {rotate: -80deg;left:200px; top:200px;}
-  100% {rotate: 0deg; left:0px; top:0px;}
-
+@keyframes astro {
+  0% {
+    rotate: 0deg;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  }
+  25% {
+    rotate: 50deg;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    rotate: 0deg;
+    left: 300px;
+    top: 100px;
+  }
+  75% {
+    rotate: -80deg;
+    left: 200px;
+    top: 200px;
+  }
+  100% {
+    rotate: 0deg;
+    left: 0px;
+    top: 0px;
+  }
 }
