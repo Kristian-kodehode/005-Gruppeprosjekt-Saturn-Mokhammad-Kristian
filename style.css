@@ -119,10 +119,11 @@ ul {
 
 .section-0 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: black;
   height: 900px;
+}
+.section-0 span {
+  opacity: 0.3;
 }
 
 .textmain {
