@@ -261,12 +261,6 @@ td {
   margin: 0;
 }
 
-span {
-  font-weight: 500;
-  color: var(--saturn-sand);
-  margin-right: 12px;
-}
-
 #imgsat {
   width: 400px;
   transition: 0.5s;
