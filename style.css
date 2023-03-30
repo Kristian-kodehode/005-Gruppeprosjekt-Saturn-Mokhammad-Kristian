@@ -174,13 +174,13 @@ Text is set to position absolute to be able to have it layed over the planet ima
 }
 
 .section-0 span {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .textmain {
   position: absolute;
   width: 490px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .textmain h1 {
   font-size: 96px;
@@ -290,6 +290,7 @@ in-depth information about Saturn.
   transition: 0.9s;
   cursor: pointer;
 }
+
 .card:hover {
   border: 2px solid var(--saturn-sand);
   background-image: linear-gradient(to bottom right, rgb(23, 23, 23), black);
