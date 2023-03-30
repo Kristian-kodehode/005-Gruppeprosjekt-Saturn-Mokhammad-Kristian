@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+/* SMOOTH SCROLLING - 
+Smooth scrolling makes sure when clicking the NAV links, the page scrolls down
+to the given location rather than jumping with no scrolling. 
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +69,6 @@ header {
 
 section {
   margin-bottom: 80px;
-  /* margin: 0 auto; */
 }
 
 a {
@@ -72,7 +76,11 @@ a {
 }
 
 /* HEADER / NAV -
-Made a nice underline hover effect on the nav items.
+Every NAV link has a hover effect which is a underline "animation".
+It is achieved simply by using position relative and absolute, setting the 
+width of the line to 0% and also placing it where you want it, in this 
+case to the left. When hovering, the effect takes place because the width
+is set to 100% while hover after.
 */
 
 header {
@@ -107,18 +115,18 @@ ul {
 li a {
   position: relative;
   text-decoration: none;
-  color: azure;
+  color: var(--satur-white);
   margin: 10px;
 }
 
 li a::after {
   content: "";
   position: absolute;
-  background-color: #bda77d;
-  height: 3px;
+  background-color: var(--satur-white);
+  height: 1px;
   width: 0;
   left: 0;
-  bottom: -3px;
+  bottom: -4px;
   transition: 0.5s;
 }
 
@@ -178,7 +186,7 @@ img {
 }
 /* SECTION 1 End */
 
-/* Section 2 start -
+/* Section 2 Planet Numbers : start -
 Nice and easy to look at generel information.
 The planet has a hover effect where is grows in size when hover. 
 Nice subtle effect that enhance the section just enough.
@@ -231,7 +239,7 @@ span {
   font-size: 24px;
 }
 
-/* SECTION 3 Start -
+/* SECTION 3 Saturn In Depth : Start -
 To break up the design we decided to go for Card design options for some more
 in-depth information about Saturn. 
 */
@@ -245,7 +253,6 @@ in-depth information about Saturn.
   margin: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  /* width: 40%; */
   width: 432px;
   min-height: 700px;
   border: 2px solid var(--satur-white);
@@ -260,10 +267,11 @@ in-depth information about Saturn.
 }
 /* SECTION 3 End */
 
-/* SECTION 4 Start -
+/* SECTION 4 Historical Events : Start -
 Section 4 contains a overflow scroll so that we can have alot of info about the 
 Saturn Historical Events spread across quite a small footprint.
 */
+
 .section-4-txt {
   padding: 16px;
   width: 90%;
@@ -273,7 +281,6 @@ Saturn Historical Events spread across quite a small footprint.
 }
 
 .section-4 ul {
-  /* line-height: 40px; */
   list-style: none;
   list-style-image: url(images/saturn\ ul\ icon.svg);
 }
@@ -289,10 +296,6 @@ Saturn Historical Events spread across quite a small footprint.
   margin-bottom: 200px;
 }
 
-/* .section-4 img {
-  width: 100%;
-} */
-
 /* SECTION 4 End  */
 
 /* FOOTER Start -
@@ -300,15 +303,22 @@ The footer contains a horizon image of the earth below Saturn.
 And the floating astronaut hovers with a animation + transform set to infinite.
 He also gives you a peace sign when hovering over him. We did this by putting
 astronaut and icon inside a class so they stick together, set icon to opacity 0 by 
-default and on hover set opacity to 1.
+default and on hover set opacity to 1. animation play state makes the animation stop
+while hovering, and also continue when not hovering.
 */
 
 .astronaut-w-hand {
   width: 150px;
   margin-left: 500px;
-  animation: astro infinite 10s linear;
+  animation: astro infinite 12s linear;
   position: relative;
+  animation-play-state: running;
 }
+
+.astronaut-w-hand:hover {
+  animation-play-state: paused;
+}
+
 .astronaut-w-hand i {
   font-size: 40px;
   color: aliceblue;
