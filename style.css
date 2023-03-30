@@ -231,9 +231,8 @@ img {
 /* SECTION 1 End */
 
 /* Section 2 Planet Numbers : start -
-Nice and easy to look at generel information.
+Used table to make the info next to the image..
 The planet has a hover effect where is grows in size when hover. 
-Nice subtle effect that enhance the section just enough.
 */
 table {
   font-family: "Roboto Mono", monospace;
@@ -244,13 +243,13 @@ th {
   text-align: start;
   color: var(--saturn-sand);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
 }
 td {
   text-align: end;
   color: var(--satur-white);
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
 }
 .section-2-1 {
   padding: 120px;
