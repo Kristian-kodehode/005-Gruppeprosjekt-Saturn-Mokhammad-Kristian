@@ -235,7 +235,23 @@ Nice and easy to look at generel information.
 The planet has a hover effect where is grows in size when hover. 
 Nice subtle effect that enhance the section just enough.
 */
+table {
+  font-family: "Roboto Mono", monospace;
+  width: 35%;
+}
 
+th {
+  text-align: start;
+  color: var(--saturn-sand);
+  font-weight: 400;
+  font-size: 24px;
+}
+td {
+  text-align: end;
+  color: var(--satur-white);
+  font-weight: 300;
+  font-size: 24px;
+}
 .section-2-1 {
   padding: 120px;
   display: flex;
