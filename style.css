@@ -239,18 +239,21 @@ table {
   width: 35%;
 }
 
-th {
-  text-align: start;
-  color: var(--saturn-sand);
+th,
+td {
   font-weight: 400;
   font-size: 22px;
 }
-td {
+
+th {
   text-align: end;
-  color: var(--satur-white);
-  font-weight: 300;
-  font-size: 22px;
+  color: var(--saturn-sand);
 }
+td {
+  text-align: start;
+  color: var(--satur-white);
+}
+
 .section-2-1 {
   padding: 120px;
   display: flex;
