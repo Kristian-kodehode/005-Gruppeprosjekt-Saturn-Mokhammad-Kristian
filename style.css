@@ -280,7 +280,6 @@ in-depth information about Saturn.
 .card {
   margin: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   width: 432px;
   min-height: 700px;
   border: 2px solid var(--satur-white);
@@ -291,6 +290,7 @@ in-depth information about Saturn.
 }
 .card:hover {
   border: 2px solid var(--saturn-sand);
+  background-image: linear-gradient(to bottom right, rgb(23, 23, 23), black);
 }
 
 .card-image {
