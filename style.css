@@ -286,6 +286,11 @@ in-depth information about Saturn.
   border: 2px solid var(--satur-white);
   border-radius: 8px;
   padding: 16px 16px 48px 16px;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.card:hover {
+  border: 2px solid var(--saturn-sand);
 }
 
 .card-image {
