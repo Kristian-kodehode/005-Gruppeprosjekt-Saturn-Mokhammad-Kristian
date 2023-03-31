@@ -245,7 +245,7 @@ td {
   font-weight: 400;
   font-size: 22px;
   padding: 0px, 16px;
-  border-bottom: 1px solid var(--satur-white);
+  border-bottom: 1px solid #bda77d80;
 }
 
 th {
