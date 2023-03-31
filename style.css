@@ -72,10 +72,10 @@ h1 {
 }
 @keyframes animation-h1 {
   0% {
-    color: var(--satur-white);
+    color: var(--saturn-sand);
   }
   100% {
-    color: var(--saturn-sand);
+    color: hsla(39, 33%, 62%, 0.6);
   }
 }
 
