@@ -109,10 +109,10 @@ a {
 
 /* HEADER / NAV -
 Every NAV link has a hover effect which is a underline "animation".
-It is achieved simply by using position relative and absolute, setting the 
-width of the line to 0% and also placing it where you want it, in this 
+It is achieved by using position relative + absolute, setting the 
+width of the line to 0% and placing it where you want it, in this 
 case to the left. When hovering, the effect takes place because the width
-is set to 100% while hover after.
+is set to 100% on hover after.
 */
 
 header {
