@@ -236,15 +236,16 @@ Used table to make the info next to the image..
 The planet has a hover effect where is grows in size when hover. 
 */
 table {
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   width: 35%;
 }
 
 th,
 td {
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 22px;
-  padding: 0px, 16px;
+  /* padding: 0px, 36px; */
   border-bottom: 1px solid #bda77d80;
 }
 
