@@ -35,6 +35,10 @@ order of the two colors that makes up the gradient.
   opacity: 0.3;
   transition: 0.9s;
 }
+::-webkit-scrollbar-button {
+  opacity: 0;
+}
+
 ::-webkit-scrollbar-corner {
   opacity: 0;
 }
@@ -54,10 +58,16 @@ created Variables for the colors used. Makes it easy to reuse them.
 
 body {
   font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-family: "Roboto Mono", monospace;
   background-color: black;
 }
+
+/* FONT ADJUSTMENTS
+H1 have received a infinite animation that varies its color
+to bring motion to the page
+
+*/
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -150,7 +160,6 @@ nav {
 .items {
   display: flex;
   gap: 2rem;
-  /* margin-right: 20px; */
 }
 
 ul {
@@ -366,7 +375,6 @@ Saturn Historical Events spread across quite a small footprint.
   height: 420px;
   overflow: scroll;
   overflow-x: hidden;
-  border-bottom: 2px solid var(--satur-white);
   -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(black, transparent);
 }
