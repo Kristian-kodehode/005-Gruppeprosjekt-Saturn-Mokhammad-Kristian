@@ -239,6 +239,7 @@ The planet has a hover effect where is grows in size when hover.
 table {
   font-family: "Roboto Mono", monospace;
   width: 35%;
+ margin-left: 500px;
 }
 
 th,
@@ -267,14 +268,261 @@ td {
   margin: 0;
 }
 
-#imgsat {
-  width: 400px;
-  transition: 0.5s;
-  filter: blur(0.4px);
+#imgsat, #saturn {
+  position: absolute;
+  transform:  translate(-50%,0);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 1;
+  margin-right: 200px;
+  margin-top: 10px;
+  animation: satrotate 10s linear infinite;
+
 }
 
-#imgsat:hover {
-  width: 600px;
+#saturn {
+  z-index: 3;
+}
+
+
+
+#asteroid{
+  width: 300px;
+  height: 300px;
+  margin-right: 400px;
+  border: 3px solid var(--saturn-sand);
+  border-right: 3px solid transparent;
+  z-index: 2;
+  animation: animasAsteroid1 7s linear infinite;
+  border-radius: 50%;
+}
+
+#asteroid, #ast1 ,
+#ast2, #ast3, #ast4, 
+#ast5, #ast6, #ast7, #ast8,
+#ast9, #ast10, #ast11, #ast12,
+#ast13, #ast14, #ast15, #ast16 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+#ast1{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -5px;
+  top: -5px;
+  width: 310px;
+  height: 310px;
+  animation: animasAsteroid2 24s linear infinite;
+
+}
+
+
+#ast2{
+  border: 4px solid var(--satur-white);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -5px;
+  top: -5px;
+  width: 320px;
+  height: 320px;
+  animation: animasAsteroid2 11s linear infinite;
+
+}
+
+#ast3{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -15px;
+  top: -15px;
+  width: 330px;
+  height: 330px;
+  animation: animasAsteroid2 17s linear infinite;
+
+}
+
+#ast4{
+  border: 4px solid var(--saturn-sand);
+  border-top: 4px solid transparent;
+  opacity: 0.6;
+  left: -20px;
+  top: -20px;
+  width: 340px;
+  height: 340px;
+  animation: animasAsteroid2 10s linear infinite;
+
+}
+
+#ast5{
+  border: 4px solid var(--satur-white);
+  border-top: 4px solid transparent;
+  opacity: 0.7;
+  left: -25px;
+  top: -25px;
+  width: 350px;
+  height: 350px;
+  animation: animasAsteroid2 18s linear infinite;
+
+}
+
+#ast6{
+  border: 4px solid var(--saturn-sand);
+  border-bottom: 4px solid transparent;
+  opacity: 0.8;
+  left: -30px;
+  top: -30px;
+  width: 360px;
+  height: 360px;
+  animation: animasAsteroid2 16s linear infinite;
+
+}
+
+#ast7{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -35px;
+  top: -35px;
+  width: 370px;
+  height: 370px;
+  animation: animasAsteroid2 22s linear infinite;
+
+}
+
+#ast8{
+  border: 4px solid var(--satur-white);
+  border-left: 4px solid transparent;
+  opacity: 0.8;
+  left: -40px;
+  top: -40px;
+  width: 380px;
+  height: 380px;
+  animation: animasAsteroid2 22s linear infinite;
+
+}
+
+#ast9{
+  border: 4px solid var(--saturn-sand);
+  border-top: 4px solid transparent;
+  opacity: 0.6;
+  left: -63px;
+  top: -63px;
+  width: 426px;
+  height: 426px;
+  animation: animasAsteroid2 22s linear infinite;
+
+}
+
+#ast10{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -70px;
+  top: -70px;
+  width: 440px;
+  height: 440px;
+  animation: animasAsteroid2 22s linear infinite;
+
+}
+
+#ast11{
+  border: 4px solid white;
+  border-top: 4px solid transparent;
+  opacity: 0.7;
+  left: -77px;
+  top: -77px;
+  width: 454px;
+  height: 454px;
+  animation: animasAsteroid2 21s linear infinite;
+
+}
+
+#ast12{
+  border: 4px solid var(--saturn-sand);
+  border-bottom: 4px solid transparent;
+  opacity: 0.6;
+  left: -84px;
+  top: -84px;
+  width: 468px;
+  height: 468px;
+  animation: animasAsteroid2 12s linear infinite;
+
+}
+
+#ast13{
+  border: 4px solid var(--satur-white);
+  border-bottom: 4px solid transparent;
+  opacity: 0.7;
+  left: -91px;
+  top: -91px;
+  width: 482px;
+  height: 482px;
+  animation: animasAsteroid2 17s linear infinite;
+
+}
+
+#ast14{
+  border: 4px solid var(--satur-white);
+  border-left: 4px solid transparent;
+  opacity: 0.7;
+  left: -98px;
+  top: -98px;
+  width: 496px;
+  height: 496px;
+  animation: animasAsteroid2 17s linear infinite;
+
+}
+
+#ast15{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -105px;
+  top: -105px;
+  width: 510px;
+  height: 510px;
+  animation: animasAsteroid2 12s linear infinite;
+
+}
+
+#ast16{
+  border: 4px solid var(--saturn-sand);
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+  left: -112px;
+  top: -112px;
+  width: 524px;
+  height: 524px;
+  animation: animasAsteroid2 23s linear infinite;
+
+}
+
+
+@keyFrames animasAsteroid1{
+  0%{
+      transform: rotateX(-80deg) rotateY(-20deg)
+       rotateZ(0deg);
+  }
+
+  100%{
+      transform: rotateX(-80deg) rotateY(-20deg)
+       rotateZ(360deg);
+  }
+}
+
+@keyFrames animasAsteroid2{
+  0%{
+      transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg);
+  }
+
+  100%{
+      transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(360deg);
+  }
 }
 
 .undertext {
