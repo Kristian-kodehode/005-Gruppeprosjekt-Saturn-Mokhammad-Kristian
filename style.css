@@ -35,6 +35,10 @@ order of the two colors that makes up the gradient.
   opacity: 0.3;
   transition: 0.9s;
 }
+::-webkit-scrollbar-button {
+  opacity: 0;
+}
+
 ::-webkit-scrollbar-corner {
   opacity: 0;
 }
@@ -54,17 +58,35 @@ created Variables for the colors used. Makes it easy to reuse them.
 
 body {
   font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-family: "Roboto Mono", monospace;
   background-color: black;
 }
+
+/* FONT ADJUSTMENTS
+H1 have received a infinite animation that varies its color
+to bring motion to the page
+
+*/
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 64px;
   color: var(--saturn-sand);
+  animation-name: animation-h1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   font-weight: 400;
   margin: 16px 0px 16px 0px;
+}
+@keyframes animation-h1 {
+  0% {
+    color: var(--saturn-sand);
+  }
+  100% {
+    color: hsla(39, 33%, 62%, 0.6);
+  }
 }
 
 h2 {
@@ -138,7 +160,6 @@ nav {
 .items {
   display: flex;
   gap: 2rem;
-  /* margin-right: 20px; */
 }
 
 ul {
@@ -193,12 +214,11 @@ Text is set to position absolute to be able to have it layed over the Saturn pla
     opacity: 0;
     left: 0px;
   }
-  
+
   100% {
     opacity: 1;
     left: 150px;
   }
-
 }
 .textmain h1 {
   font-size: 96px;
@@ -237,20 +257,22 @@ Used table to make the info next to the image..
 The planet has a hover effect where is grows in size when hover. 
 */
 table {
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   width: 35%;
  margin-left: 500px;
 }
 
 th,
 td {
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 22px;
-  padding: 0px 2px;
+  /* padding: 0px, 36px; */
+  border-bottom: 1px solid #bda77d80;
 }
 
 th {
-  text-align: end;
+  text-align: start;
   color: var(--saturn-sand);
 }
 td {
@@ -590,13 +612,19 @@ Section 4 contains a overflow scroll so that we can have alot of info about the
 Saturn Historical Events spread across quite a small footprint.
 */
 
+.section-4 img {
+  -webkit-mask-image: linear-gradient(transparent, black, transparent);
+  mask-image: linear-gradient(transparent black, transparent);
+}
+
 .section-4-txt {
-  padding: 56px;
+  padding: 0px 56px;
   width: 100%;
   height: 420px;
   overflow: scroll;
   overflow-x: hidden;
-  border-bottom: 2px solid var(--satur-white);
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
 }
 
 .section-4 ul {
