@@ -707,6 +707,93 @@ in-depth information about Saturn.
   border-radius: 6px;
   margin-bottom: 16px;
 }
+/* PLANET SIZE SECTION */
+/* GRANDPARENT */
+.planetsizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+/* PARENT */
+.planetWtag {
+  text-align: center;
+}
+/* CIRCLES REPRESENTING PLANETS 
+-includes animation that makes the planets hover up and down
+*/
+.planets {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation-name: planet-hover;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* PLANETS ANIMATION TIMELINE */
+@keyframes planet-hover {
+  0% {
+    bottom: 0px;
+  }
+  /* 50% {
+    bottom: 20px;
+  } */
+  100% {
+    bottom: 12px;
+  }
+}
+
+/* TEXT PLANETNAMES - Hidden by default*/
+.hide {
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+}
+.planets:hover {
+  background-color: #f2f2f2;
+  border: none;
+}
+.planets:hover + .hide {
+  opacity: 1;
+}
+/* ADJUSTING SIZES FOR EACH PLANET THROUGH ADDED CLASSNAME */
+.size-mercury {
+  width: 6px;
+  height: 6px;
+}
+.size-venus {
+  width: 18px;
+  height: 18px;
+}
+.size-earth {
+  width: 20px;
+  height: 20px;
+}
+.size-mars {
+  width: 10px;
+  height: 10px;
+}
+.size-jupiter {
+  width: 220px;
+  height: 220px;
+}
+.size-saturn {
+  width: 180px;
+  height: 180px;
+}
+.size-uranus {
+  width: 80px;
+  height: 80px;
+}
+.size-neptune {
+  width: 72px;
+  height: 72px;
+}
 
 /* SECTION 3 End */
 
