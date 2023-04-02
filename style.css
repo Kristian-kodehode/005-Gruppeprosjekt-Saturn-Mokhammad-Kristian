@@ -283,9 +283,8 @@ td {
 .section-2-1 {
   padding: 120px;
   display: flex;
-  gap: 5rem;
+  /* gap: 5rem; */
   align-items: center;
-  background-color: black;
   justify-content: center;
   margin: 0;
 }
