@@ -681,6 +681,7 @@ in-depth information about Saturn.
 .cards {
   display: flex;
   gap: 44px;
+  margin-bottom: 80px;
 }
 
 .card {
@@ -707,7 +708,7 @@ in-depth information about Saturn.
   border-radius: 6px;
   margin-bottom: 16px;
 }
-/* PLANET SIZE SECTION */
+/* COMPARE SIZES SECTION */
 /* GRANDPARENT */
 .planetsizes {
   display: flex;
@@ -723,7 +724,7 @@ in-depth information about Saturn.
 -includes animation that makes the planets hover up and down
 */
 .planets {
-  border: 2px solid white;
+  border: 2px solid var(--satur-white);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   display: inline-block;
@@ -750,12 +751,13 @@ in-depth information about Saturn.
 /* TEXT PLANETNAMES - Hidden by default*/
 .hide {
   background-color: none;
-  color: white;
+  color: var(--saturn-sand);
+  font-size: 20px;
   cursor: pointer;
   opacity: 0;
 }
 .planets:hover {
-  background-color: #f2f2f2;
+  background-color: var(--satur-white);
   border: none;
 }
 .planets:hover + .hide {
