@@ -139,6 +139,7 @@ is set to 100% on hover after.
 
 header {
   position: fixed;
+  z-index: 10;
 }
 
 nav {
