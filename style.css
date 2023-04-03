@@ -575,7 +575,6 @@ Inni her
   animation: animasAsteroid2 23s linear infinite;
 }
 
-
 @keyframes animasAsteroid1 {
   0% {
     transform: rotateX(-75deg) rotateY(-20deg) rotateZ(0deg);
@@ -846,18 +845,15 @@ while hovering, and also continue when not hovering.
 }
 /*  FOOTER End */
 
-
-@media(max-width:761px) {
-
+@media (max-width: 761px) {
   nav {
     font-size: 10px;
-    
   }
 
   li a {
     margin: 0px;
   }
-  
+
   .textmain h2 {
     font-size: 20px;
     width: 300px;
@@ -866,7 +862,6 @@ while hovering, and also continue when not hovering.
   .textmain h1 {
     font-size: 40px;
     width: 300px;
-
   }
 
   .section-0 {
@@ -880,83 +875,78 @@ while hovering, and also continue when not hovering.
   .section-1 h1 {
     font-size: 45px;
   }
-  
-  .grid-item{
+
+  .grid-item {
     font-size: small;
     width: 400px;
-   }
+  }
 
-   .grid-container {
+  .grid-container {
     display: flex;
     flex-direction: column;
-   }
+  }
 
-   .section-2-1 {
+  .section-2-1 {
     padding: 0;
     display: flex;
     font-size: smaller;
-    
   }
 
   .imgsat,
-.saturn {
+  .saturn {
+    left: 220px;
+  }
 
-  left: 220px;
+  table {
+    width: 400px;
+    position: relative;
+    top: 300px;
+    margin-right: 50px;
+  }
 
-}
+  table th td {
+    font-size: small;
+  }
 
-table{
-  width: 400px;
-  position: relative;
-  top: 300px;
-  margin-right: 50px;
-}
+  .undertext {
+    margin-top: 350px;
+  }
 
-table th td{
-  font-size: small;
-}
+  .textExample h3 {
+    font-size: 12px;
+  }
 
-.undertext{
-  margin-top: 350px;
+  .textExample p {
+    font-size: 18px;
+  }
 
-}
+  .asteroid {
+    margin-left: 330px;
+  }
 
-.textExample h3 {
-  font-size: 12px;
-}
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
 
-.textExample p {
-  font-size: 18px;
-}
+  .card {
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 432px;
+    min-height: 700px;
+    border: 2px solid var(--satur-white);
+    border-radius: 8px;
+    padding: 16px 16px 48px 16px;
+    transition: 0.9s;
+    cursor: pointer;
+  }
 
-.asteroid {
-  margin-left: 330px;
-}
+  .planetsizes {
+    display: block;
+  }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  margin: 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 432px;
-  min-height: 700px;
-  border: 2px solid var(--satur-white);
-  border-radius: 8px;
-  padding: 16px 16px 48px 16px;
-  transition: 0.9s;
-  cursor: pointer;
-}
-
-.planetsizes {
-  display: block;
-}
-
-.astronaut-w-hand {
-  width: 150px;
-  margin-left: 30px;
-}
-
+  .astronaut-w-hand {
+    width: 150px;
+    margin-left: 30px;
+  }
 }
