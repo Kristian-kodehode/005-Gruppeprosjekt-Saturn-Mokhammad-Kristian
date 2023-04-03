@@ -153,7 +153,7 @@ nav {
   width: 100%;
 }
 
-.logo {
+#logo {
   margin-left: 20px;
   width: 130px;
 }
@@ -854,11 +854,6 @@ while hovering, and also continue when not hovering.
     
   }
 
-  .logo {
-    margin-right: 30px;
-    width: 100px;
-  }
-
   li a {
     margin: 0px;
   }
@@ -962,3 +957,6 @@ table th td{
 .astronaut-w-hand {
   width: 150px;
   margin-left: 30px;
+}
+
+}
