@@ -289,7 +289,7 @@ td {
   margin: 0;
 }
 
-/* SATURN ANIMATION */
+/* SATURN ANIMATION Start */
 /* FORKLAR SATURN ANIMASJON -
 Inni her 
 
@@ -648,6 +648,8 @@ Inni her
     transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
   }
 }
+
+/* SATURN ANIMATION END */
 
 .undertext {
   color: var(--satur-white);
