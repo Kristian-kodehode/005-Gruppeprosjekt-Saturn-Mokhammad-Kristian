@@ -686,13 +686,18 @@ each line of the ring has its own parameters, both in time and sizes.
 
 /* SECTION 3 Saturn In Depth : Start -
 To break up the design we decided to go for Card design options for some more
-in-depth information about Saturn.Added a hover effect to fit on the page
+in-depth information about Saturn.Added a hover effects to fit on the page
 */
 
 .cards {
   display: flex;
   gap: 44px;
   margin-bottom: 80px;
+
+}
+
+.cards:hover > .card:not(:hover) {
+  filter:  brightness(0.5) blur(10px);
 
 }
 
