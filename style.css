@@ -298,8 +298,8 @@ Inni her
 -
 */
 
-#imgsat,
-#saturn {
+.imgsat,
+.saturn {
   position: absolute;
   transform: translate(-50%, 0);
   height: 200px;
@@ -310,11 +310,11 @@ Inni her
   z-index: 1;
 }
 
-#saturn {
+.saturn {
   z-index: 3;
 }
 
-#asteroid {
+.asteroid {
   width: 300px;
   height: 300px;
   margin-right: 400px;
@@ -325,37 +325,37 @@ Inni her
   z-index: 2;
 }
 
-#asteroid,
-#ast1,
-#ast2,
-#ast3,
-#ast4,
-#ast5,
-#ast6,
-#ast7,
-#ast8,
-#ast9,
-#ast10,
-#ast11,
-#ast12,
-#ast13,
-#ast14,
-#ast15,
-#ast16,
-#ast17,
-#ast18,
-#ast19,
-#ast20,
-#ast21,
-#ast22,
-#ast23,
-#ast24,
-#ast25 {
+.asteroid,
+.ast1,
+.ast2,
+.ast3,
+.ast4,
+.ast5,
+.ast6,
+.ast7,
+.ast8,
+.ast9,
+.ast10,
+.ast11,
+.ast12,
+.ast13,
+.ast14,
+.ast15,
+.ast16,
+.ast17,
+.ast18,
+.ast19,
+.ast20,
+.ast21,
+.ast22,
+.ast23,
+.ast24,
+.ast25 {
   position: absolute;
   border-radius: 50%;
 }
 
-#ast1 {
+.ast1 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -366,7 +366,7 @@ Inni her
   animation: animasAsteroid2 24s linear infinite;
 }
 
-#ast2 {
+.ast2 {
   border: 4px solid var(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -377,7 +377,7 @@ Inni her
   animation: animasAsteroid2 11s linear infinite;
 }
 
-#ast3 {
+.ast3 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -388,7 +388,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast4 {
+.ast4 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
   opacity: 0.6;
@@ -399,7 +399,7 @@ Inni her
   animation: animasAsteroid2 10s linear infinite;
 }
 
-#ast5 {
+.ast5 {
   border: 4px solid var(--satur-white);
   border-top: 4px solid transparent;
   opacity: 0.7;
@@ -410,7 +410,7 @@ Inni her
   animation: animasAsteroid2 18s linear infinite;
 }
 
-#ast6 {
+.ast6 {
   border: 4px solid var(--saturn-sand);
   border-bottom: 4px solid transparent;
   opacity: 0.8;
@@ -421,7 +421,7 @@ Inni her
   animation: animasAsteroid2 16s linear infinite;
 }
 
-#ast7 {
+.ast7 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -432,7 +432,7 @@ Inni her
   animation: animasAsteroid2 22s linear infinite;
 }
 
-#ast8 {
+.ast8 {
   border: 4px solid var(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.8;
@@ -443,7 +443,7 @@ Inni her
   animation: animasAsteroid2 22s linear infinite;
 }
 
-#ast9 {
+.ast9 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
   opacity: 0.6;
@@ -454,7 +454,7 @@ Inni her
   animation: animasAsteroid2 22s linear infinite;
 }
 
-#ast10 {
+.ast10 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -465,7 +465,7 @@ Inni her
   animation: animasAsteroid2 22s linear infinite;
 }
 
-#ast11 {
+.ast11 {
   border: 4px solid white;
   border-top: 4px solid transparent;
   opacity: 0.7;
@@ -476,7 +476,7 @@ Inni her
   animation: animasAsteroid2 21s linear infinite;
 }
 
-#ast12 {
+.ast12 {
   border: 4px solid var(--saturn-sand);
   border-bottom: 4px solid transparent;
   opacity: 0.6;
@@ -487,7 +487,7 @@ Inni her
   animation: animasAsteroid2 12s linear infinite;
 }
 
-#ast13 {
+.ast13 {
   border: 4px solid var(--satur-white);
   border-bottom: 4px solid transparent;
   opacity: 0.7;
@@ -498,7 +498,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast14 {
+.ast14 {
   border: 4px solid var(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.7;
@@ -509,7 +509,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast15 {
+.ast15 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -520,7 +520,7 @@ Inni her
   animation: animasAsteroid2 12s linear infinite;
 }
 
-#ast16 {
+.ast16 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
   opacity: 0.6;
@@ -531,7 +531,7 @@ Inni her
   animation: animasAsteroid2 23s linear infinite;
 }
 
-#ast17 {
+.ast17 {
   border: 4px solid var(--saturn-sand);
   border-bottom: 4px solid transparent;
   opacity: 0.6;
@@ -542,7 +542,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast18 {
+.ast18 {
   border: 4px solid var(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -553,7 +553,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast19 {
+.ast19 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
   opacity: 0.6;
@@ -564,7 +564,7 @@ Inni her
   animation: animasAsteroid2 12s linear infinite;
 }
 
-#ast20 {
+.ast20 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
   opacity: 0.8;
@@ -575,7 +575,7 @@ Inni her
   animation: animasAsteroid2 23s linear infinite;
 }
 
-#ast21 {
+.ast21 {
   border: 4px solid vvar(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.5;
@@ -586,7 +586,7 @@ Inni her
   animation: animasAsteroid2 17s linear infinite;
 }
 
-#ast22 {
+.ast22 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
@@ -597,7 +597,7 @@ Inni her
   animation: animasAsteroid2 12s linear infinite;
 }
 
-#ast23 {
+.ast23 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.9;
@@ -608,7 +608,7 @@ Inni her
   animation: animasAsteroid2 23s linear infinite;
 }
 
-#ast24 {
+.ast24 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.8;
@@ -619,7 +619,7 @@ Inni her
   animation: animasAsteroid2 12s linear infinite;
 }
 
-#ast25 {
+.ast25 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
