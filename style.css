@@ -1,4 +1,4 @@
-/* A minimal css reset - 
+/* A minimal css reset -
 Resets margins and paddings
 */
 *,
@@ -9,16 +9,16 @@ Resets margins and paddings
   padding: 0;
 }
 
-/* SMOOTH SCROLLING - 
+/* SMOOTH SCROLLING -
 Smooth scrolling makes sure when clicking the NAV links, the page scrolls down
-to the given location rather than jumping with no scrolling. 
+to the given location rather than jumping with no scrolling.
 */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* CUSTOM SCROLLBAR - 
+/* CUSTOM SCROLLBAR -
 Scrollbar represent the entire scrollbar and it has on color.
 The thumb is the slider that actually slides up and down and it has a gradient.
 The gradient is set to 45deg so that it goes vertical, by default it goes horizontal.
@@ -47,7 +47,7 @@ order of the two colors that makes up the gradient.
   background: linear-gradient(45deg, var(--satur-white), var(--saturn-sand));
 }
 
-/* OUR TWO MAIN COLORS BESIDE BLACK - 
+/* OUR TWO MAIN COLORS BESIDE BLACK -
 created Variables for the colors used. Makes it easy to reuse them.
 */
 
@@ -131,8 +131,8 @@ a {
 
 /* HEADER / NAV -
 Every NAV link has a hover effect which is a underline "animation".
-It is achieved by using position relative + absolute, setting the 
-width of the line to 0% and placing it where you want it, in this 
+It is achieved by using position relative + absolute, setting the
+width of the line to 0% and placing it where you want it, in this
 case to the left. When hovering, the effect takes place because the width
 is set to 100% on hover after.
 */
@@ -141,6 +141,7 @@ header {
   position: fixed;
   z-index: 10;
 }
+
 
 nav {
   height: 80px;
@@ -152,6 +153,45 @@ nav {
   position: fixed;
   width: 100%;
 }
+
+.logoanim {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--satur-white);
+  border-right: 1px solid transparent;
+  animation: animlogo 7s linear infinite;
+  z-index: -1;
+  margin-left: 14px;
+  margin-bottom: 10px;
+  
+  }
+  
+  .logoanim ,.line1 {
+    position: absolute;
+    border-radius: 50%;
+  
+  }
+  
+  .line1 {
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--saturn-sand);
+    border-right: 4px solid transparent;
+    opacity: 0.9;
+    animation: animlogo 4s linear infinite;
+  }
+  
+  
+  @keyframes animlogo {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform:  rotate(360deg);
+    }
+  }
+
 
 #logo {
   margin-left: 20px;
@@ -200,7 +240,7 @@ Text is set to position absolute to be able to have it layed over the Saturn pla
 }
 
 .section-0 span {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .textmain {
@@ -229,9 +269,10 @@ Text is set to position absolute to be able to have it layed over the Saturn pla
   margin-left: auto;
 }
 
+
 /* Section0 end */
 
-/* SECTION 1 Extreme Pressure : Start - 
+/* SECTION 1 Extreme Pressure : Start -
 Used grid system to spread out the info, which was easier than creating flexbox.
 Image is set to width 100% to cover the entire width of the page.
 */
@@ -246,6 +287,7 @@ Image is set to width 100% to cover the entire width of the page.
   padding: 8px;
   font-size: 16px;
   color: var(--satur-white);
+  border-bottom: 8px solid var(--saturn-sand) ;
 }
 
 img {
@@ -255,7 +297,7 @@ img {
 
 /* Section 2 Planet Numbers : start -
 Used table to make the info next to the image..
-The planet has a hover effect where is grows in size when hover. 
+The planet has a hover effect where is grows in size when hover.
 */
 table {
   /* font-family: "Roboto Mono", monospace; */
@@ -291,22 +333,23 @@ td {
 }
 
 /* SATURN ANIMATION Start */
-/* FORKLAR SATURN ANIMASJON -
-Inni her 
-
-
--
-*/
+/* Added two images with position absolute.
+ First image is full, and the other half were we used z-index3.
+This was done so that the rings could rotate 360 degrees around Saturn.
+ Also used for images transform translate,
+so that Saturn was in the middle of the rings.
+Added two animations. One animation is parent and responsible for the radius,
+the second is with childe dives for the randomness of the rings. In the second animation,
+each line of the ring has its own parameters, both in time and sizes.
+ Transform set to infinite.*/
 
 .imgsat,
 .saturn {
   position: absolute;
-  transform: translate(-50%, 0);
-  height: 200px;
-  width: 200px;
+  transform: translate(-90%,0);
+  height: 220px;
+  width: 220px;
   border-radius: 50%;
-  margin-right: 200px;
-  margin-top: 10px;
   z-index: 1;
 }
 
@@ -321,7 +364,6 @@ Inni her
   border: 3px solid var(--saturn-sand);
   border-right: 3px solid transparent;
   animation: animasAsteroid1 7s linear infinite;
-  border-radius: 50%;
   z-index: 2;
 }
 
@@ -370,8 +412,8 @@ Inni her
   border: 4px solid var(--satur-white);
   border-left: 4px solid transparent;
   opacity: 0.6;
-  left: -5px;
-  top: -5px;
+  left: -10px;
+  top: -10px;
   width: 320px;
   height: 320px;
   animation: animasAsteroid2 11s linear infinite;
@@ -400,8 +442,8 @@ Inni her
 }
 
 .ast5 {
-  border: 4px solid var(--satur-white);
-  border-top: 4px solid transparent;
+  border: 3px solid var(--satur-white);
+  border-top: 3px solid transparent;
   opacity: 0.7;
   left: -25px;
   top: -25px;
@@ -429,12 +471,12 @@ Inni her
   top: -35px;
   width: 370px;
   height: 370px;
-  animation: animasAsteroid2 22s linear infinite;
+  animation: animasAsteroid2 14s linear infinite;
 }
 
 .ast8 {
-  border: 4px solid var(--satur-white);
-  border-left: 4px solid transparent;
+  border: 3px solid var(--satur-white);
+  border-left: 3px solid transparent;
   opacity: 0.8;
   left: -40px;
   top: -40px;
@@ -446,44 +488,44 @@ Inni her
 .ast9 {
   border: 4px solid var(--saturn-sand);
   border-top: 4px solid transparent;
-  opacity: 0.6;
-  left: -63px;
-  top: -63px;
-  width: 426px;
-  height: 426px;
+  opacity: 0.3;
+  left: -45px;
+  top: -45px;
+  width: 390px;
+  height: 390px;
   animation: animasAsteroid2 22s linear infinite;
 }
 
 .ast10 {
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
-  opacity: 0.6;
-  left: -70px;
-  top: -70px;
-  width: 440px;
-  height: 440px;
+  opacity: 0.7;
+  left: -50px;
+  top: -50px;
+  width: 400px;
+  height: 400px;
   animation: animasAsteroid2 22s linear infinite;
 }
 
 .ast11 {
-  border: 4px solid white;
+  border: 4px solid var(--satur-white);;
   border-top: 4px solid transparent;
-  opacity: 0.7;
-  left: -77px;
-  top: -77px;
-  width: 454px;
-  height: 454px;
+  opacity: 0.4;
+  left: -55px;
+  top: -55px;
+  width: 410px;
+  height: 410px;
   animation: animasAsteroid2 21s linear infinite;
 }
 
 .ast12 {
-  border: 4px solid var(--saturn-sand);
-  border-bottom: 4px solid transparent;
-  opacity: 0.6;
-  left: -84px;
-  top: -84px;
-  width: 468px;
-  height: 468px;
+  border: 3px solid var(--saturn-sand);
+  border-left: 3px solid transparent;
+  opacity: 0.7;
+  left: -60px;
+  top: -60px;
+  width: 420px;
+  height: 420px;
   animation: animasAsteroid2 12s linear infinite;
 }
 
@@ -491,21 +533,21 @@ Inni her
   border: 4px solid var(--satur-white);
   border-bottom: 4px solid transparent;
   opacity: 0.7;
-  left: -91px;
-  top: -91px;
-  width: 482px;
-  height: 482px;
+  left: -65px;
+  top: -65px;
+  width: 430px;
+  height: 430px;
   animation: animasAsteroid2 17s linear infinite;
 }
 
 .ast14 {
-  border: 4px solid var(--satur-white);
-  border-left: 4px solid transparent;
+  border: 4px solid var(--saturn-sand);
+  /* border-left: 4px solid transparent; */
   opacity: 0.7;
-  left: -98px;
-  top: -98px;
-  width: 496px;
-  height: 496px;
+  left: -70px;
+  top: -70px;
+  width: 440px;
+  height: 440px;
   animation: animasAsteroid2 17s linear infinite;
 }
 
@@ -513,65 +555,87 @@ Inni her
   border: 4px solid var(--saturn-sand);
   border-left: 4px solid transparent;
   opacity: 0.6;
-  left: -105px;
-  top: -105px;
-  width: 510px;
-  height: 510px;
+  left: -100px;
+  top: -100px;
+  width: 500px;
+  height: 500px;
   animation: animasAsteroid2 12s linear infinite;
 }
 
 .ast16 {
-  border: 4px solid var(--saturn-sand);
-  border-top: 4px solid transparent;
-  opacity: 0.6;
-  left: -119px;
-  top: -119px;
-  width: 524px;
-  height: 524px;
+  border: 3px solid var(--saturn-sand);
+  border-top: 3px solid transparent;
+  opacity: 0.5;
+  left: -107px;
+  top: -107px;
+  width: 514px;
+  height: 514px;
   animation: animasAsteroid2 23s linear infinite;
 }
 
 .ast17 {
-  border: 4px solid var(--saturn-sand);
-  border-bottom: 4px solid transparent;
+  border: 3px solid var(--saturn-sand);
+  border-left: 3px solid transparent;
   opacity: 0.6;
-  left: -126px;
-  top: -126px;
-  width: 538px;
-  height: 538px;
+  left: -115px;
+  top: -115px;
+  width: 528px;
+  height: 528px;
   animation: animasAsteroid2 17s linear infinite;
 }
 
 .ast18 {
   border: 4px solid var(--satur-white);
-  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
   opacity: 0.6;
-  left: -123px;
-  top: -123px;
-  width: 552px;
-  height: 552px;
+  left: -122px;
+  top: -122px;
+  width: 542px;
+  height: 542px;
   animation: animasAsteroid2 17s linear infinite;
 }
 
 .ast19 {
   border: 4px solid var(--saturn-sand);
-  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
   opacity: 0.6;
-  left: -130px;
-  top: -130px;
-  width: 566px;
-  height: 566px;
+  left: -129px;
+  top: -129px;
+  width: 558px;
+  height: 558px;
   animation: animasAsteroid2 12s linear infinite;
 }
 
 .ast20 {
   border: 4px solid var(--saturn-sand);
-  border-top: 4px solid transparent;
+  /* border-top: 4px solid transparent; */
   opacity: 0.8;
   left: -136px;
   top: -136px;
-  width: 580px;
-  height: 580px;
+  width: 574px;
+  height: 574px;
+  animation: animasAsteroid2 23s linear infinite;
+}
+
+.ast21 {
+  border: 4px solid var(--saturn-sand);
+  border-top: 4px solid transparent;
+  opacity: 0.8;
+  left: -143px;
+  top: -143px;
+  width: 588px;
+  height: 588px;
+  animation: animasAsteroid2 23s linear infinite;
+}
+
+.ast22 {
+  border: 3px solid var(--satur-white);
+  /* border-top: 4px solid transparent; */
+  opacity: 0.8;
+  left: -150px;
+  top: -150px;
+  width: 600px;
+  height: 600px;
   animation: animasAsteroid2 23s linear infinite;
 }
 
@@ -622,20 +686,21 @@ Inni her
 
 /* SECTION 3 Saturn In Depth : Start -
 To break up the design we decided to go for Card design options for some more
-in-depth information about Saturn. 
+in-depth information about Saturn.Added a hover effect to fit on the page
 */
 
 .cards {
   display: flex;
   gap: 44px;
   margin-bottom: 80px;
+
 }
 
 .card {
   margin: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 432px;
-  min-height: 700px;
+  min-height: 500px;
   border: 2px solid var(--satur-white);
   border-radius: 8px;
   padding: 16px 16px 48px 16px;
@@ -643,10 +708,15 @@ in-depth information about Saturn.
   cursor: pointer;
 }
 
+
 .card:hover {
+  z-index: 12;
+  width: 800px;
+  height: 800px;
   border: 2px solid var(--saturn-sand);
   background-image: linear-gradient(to bottom right, rgb(23, 23, 23), black);
 }
+
 
 .card-image {
   width: 100%;
@@ -667,7 +737,7 @@ in-depth information about Saturn.
 .planetWtag {
   text-align: center;
 }
-/* CIRCLES REPRESENTING PLANETS 
+/* CIRCLES REPRESENTING PLANETS
 -includes animation that makes the planets hover up and down
 */
 .planets {
@@ -747,7 +817,7 @@ in-depth information about Saturn.
 /* SECTION 3 End */
 
 /* SECTION 4 Historical Events : Start -
-Section 4 contains a overflow scroll so that we can have alot of info about the 
+Section 4 contains a overflow scroll so that we can have alot of info about the
 Saturn Historical Events spread across quite a small footprint.
 */
 
@@ -787,7 +857,7 @@ Saturn Historical Events spread across quite a small footprint.
 The footer contains a horizon image of the earth below Saturn.
 And the floating astronaut hovers with a animation + transform set to infinite.
 He also gives you a peace sign when hovering over him. We did this by putting
-astronaut and icon inside a class so they stick together, set icon to opacity 0 by 
+astronaut and icon inside a class so they stick together, set icon to opacity 0 by
 default and on hover set opacity to 1. animation play state makes the animation stop
 while hovering, and also continue when not hovering.
 */
@@ -854,14 +924,31 @@ while hovering, and also continue when not hovering.
     margin: 0px;
   }
 
+  .textmain  {
+    left: 20px;
+    animation-name: section0-animation;
+  }
+
+  @keyframes section0-animation {
+    0% {
+      opacity: 0;
+      left: 0px;
+    }
+
+    100% {
+      opacity: 1;
+      left: 20px;
+    }
+  }
+
   .textmain h2 {
     font-size: 20px;
     width: 300px;
   }
 
   .textmain h1 {
-    font-size: 40px;
-    width: 300px;
+    font-size: 60px;
+    width: 350px;
   }
 
   .section-0 {
@@ -894,13 +981,18 @@ while hovering, and also continue when not hovering.
 
   .imgsat,
   .saturn {
-    left: 220px;
+    left: 350px;
+  }
+
+  .asteroid {
+    margin-right: 300px;
+
   }
 
   table {
     width: 400px;
     position: relative;
-    top: 300px;
+    top: 250px;
     margin-right: 50px;
   }
 
@@ -913,11 +1005,12 @@ while hovering, and also continue when not hovering.
   }
 
   .textExample h3 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .textExample p {
-    font-size: 18px;
+    font-size: 16px;
+
   }
 
   .asteroid {
@@ -927,18 +1020,12 @@ while hovering, and also continue when not hovering.
   .cards {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
   }
 
-  .card {
-    margin: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 432px;
-    min-height: 700px;
-    border: 2px solid var(--satur-white);
-    border-radius: 8px;
-    padding: 16px 16px 48px 16px;
-    transition: 0.9s;
-    cursor: pointer;
+  .card:hover {
+  width: 450px;
+  height: 900px;
   }
 
   .planetsizes {
