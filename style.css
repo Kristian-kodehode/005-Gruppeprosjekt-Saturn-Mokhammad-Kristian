@@ -1007,12 +1007,9 @@ while hovering, and also continue when not hovering.
     display: block;
   }
 
-  .textExample h3 {
-    font-size: 10px;
-  }
-
   .textExample p {
-    font-size: 16px;
+    /* font-size: 16px; */
+    margin-bottom: 32px;
   }
 
   .asteroid {
