@@ -911,12 +911,20 @@ while hovering, and also continue when not hovering.
 /* RESPONSIVE DESIGN ADJUSTMENTS - Media query */
 
 @media (max-width: 761px) {
+  h1 {
+    font-size: 48px;
+  }
+
   nav {
     font-size: 10px;
   }
 
   li a {
     margin: 0px;
+  }
+
+  .items {
+    gap: 1rem;
   }
 
   .textmain {
@@ -996,6 +1004,7 @@ while hovering, and also continue when not hovering.
 
   .undertext {
     margin-top: 350px;
+    display: block;
   }
 
   .textExample h3 {
