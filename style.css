@@ -908,6 +908,8 @@ while hovering, and also continue when not hovering.
 }
 /*  FOOTER End */
 
+/* RESPONSIVE DESIGN ADJUSTMENTS - Media query */
+
 @media (max-width: 761px) {
   nav {
     font-size: 10px;
@@ -1009,14 +1011,12 @@ while hovering, and also continue when not hovering.
   }
 
   .cards {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-left: 30px;
   }
 
-  .card:hover {
-    width: 450px;
-    height: 900px;
+  .card {
+    margin-top: 16px;
   }
 
   .planetsizes {
