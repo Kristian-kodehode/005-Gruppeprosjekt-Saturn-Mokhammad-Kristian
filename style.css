@@ -815,8 +815,35 @@ Saturn Historical Events spread across quite a small footprint.
 */
 
 .section-4 img {
-  -webkit-mask-image: linear-gradient(transparent, black, transparent);
-  mask-image: linear-gradient(transparent black, transparent);
+  /* -webkit-mask-image: linear-gradient(transparent, black, transparent);
+  mask-image: linear-gradient(transparent black, transparent); */
+
+}
+
+/* Added Satalit animation,
+used position absolute and transform trasnlate 
+for the position in image */
+
+.satalit {
+  position:absolute;
+  width: 500px;
+  transform: translate(-250%, 50%);
+  animation: sataanim 10s linear infinite;
+}
+
+@keyframes sataanim{
+  0% {
+    transform: translate(-250%, 50%);
+
+  }
+  50% {
+    transform: translate(-240%, 60%);
+  }
+  
+  100% {
+    transform: translate(-250%, 50%);
+  }
+
 }
 
 .section-4-txt {
