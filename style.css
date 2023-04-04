@@ -56,9 +56,19 @@ created Variables for the colors used. Makes it easy to reuse them.
   --satur-white: #f3ebdb;
 }
 
+/* FONT CHOICES -
+Poppins has a round and futuristic design that suits well with the
+space theme and even the planet name; Saturn. It also pairs well
+with our other font; Roboto Mono. We chose the Mono version because
+of mono fonts legibility, they are very easy to read. Mono fonts
+also fits very well with the theme and subject thinking back to
+the golden age of the space/moon-race where all text in NASA software
+was in mono. It is a nod to that era.
+
+*/
+
 body {
   font-family: "Poppins", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Roboto Mono", monospace;
   background-color: black;
 }
@@ -360,7 +370,7 @@ each line of the ring has its own parameters, both in time and sizes.
   animation: animasAsteroid1 7s linear infinite;
   z-index: 2;
 }
-
+/* Rings for the animation */
 .asteroid,
 .ast1,
 .ast2,
@@ -655,25 +665,28 @@ each line of the ring has its own parameters, both in time and sizes.
 
 /* SATURN ANIMATION END */
 
+/* Used divs to make these 2-line info lines of text.
+Display flex to put them side by side */
+
+/* GRANDPARENT */
 .undertext {
   color: var(--satur-white);
   display: flex;
   justify-content: space-between;
 }
 
+/* PARENT */
 .textExample {
   display: block;
   text-align: center;
   margin-left: 32px;
   margin-right: 32px;
 }
-
 .textExample h3 {
   color: var(--saturn-sand);
   font-weight: 500;
   font-size: 16px;
 }
-
 .textExample p {
   font-size: 24px;
 }
@@ -682,17 +695,20 @@ each line of the ring has its own parameters, both in time and sizes.
 To break up the design we decided to go for Card design options for some more
 in-depth information about Saturn.Added a hover effects to fit on the page
 */
-
+/* Container for all 3 cards */
 .cards {
   display: flex;
   gap: 44px;
   margin-bottom: 80px;
 }
 
+/* Combined hover state to make the cards interract with
+eachother while hovering */
 .cards:hover > .card:not(:hover) {
   filter: brightness(0.2) blur(3px);
 }
 
+/* Card design */
 .card {
   margin: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -705,6 +721,7 @@ in-depth information about Saturn.Added a hover effects to fit on the page
   cursor: pointer;
 }
 
+/* Single card hover change */
 .card:hover {
   z-index: 12;
   border: 1.5px solid var(--saturn-sand);
@@ -718,6 +735,7 @@ in-depth information about Saturn.Added a hover effects to fit on the page
   border-radius: 6px;
   margin-bottom: 16px;
 }
+
 /* COMPARE SIZES SECTION */
 /* GRANDPARENT */
 .planetsizes {
@@ -810,42 +828,39 @@ in-depth information about Saturn.Added a hover effects to fit on the page
 /* SECTION 3 End */
 
 /* SECTION 4 Historical Events : Start -
-Section 4 contains a overflow scroll so that we can have alot of info about the
-Saturn Historical Events spread across quite a small footprint.
 */
 
-.section-4 img {
-  /* -webkit-mask-image: linear-gradient(transparent, black, transparent);
-  mask-image: linear-gradient(transparent black, transparent); */
-
-}
-
 /* Added Satalit animation,
-used position absolute and transform trasnlate 
-for the position in image */
+used position absolute and transform translate
+for the position in image. The movement of the satelite adds movement
+to the design and we chose to add it in as icing on the cake. */
 
 .satalit {
-  position:absolute;
+  position: absolute;
   width: 500px;
   transform: translate(-250%, 50%);
   animation: sataanim 10s linear infinite;
 }
 
-@keyframes sataanim{
+@keyframes sataanim {
   0% {
     transform: translate(-250%, 50%);
-
   }
   50% {
     transform: translate(-240%, 60%);
   }
-  
+
   100% {
     transform: translate(-250%, 50%);
   }
-
 }
 
+/* Historical Events -
+Section 4 contains a overflow scroll so that we can have alot of info about the
+Saturn Historical Events spread across quite a small footprint.
+To give it a smooth transition for the text to the bottom we have used masking that goes
+from transparent to black.
+*/
 .section-4-txt {
   padding: 0px 56px;
   width: 100%;
@@ -937,7 +952,7 @@ while hovering, and also continue when not hovering.
 }
 /*  FOOTER End */
 
-/* RESPONSIVE DESIGN ADJUSTMENTS - Media query */
+/* RESPONSIVE DESIGN ADJUSTMENTS - Stretch Goal - Media query */
 
 @media (max-width: 761px) {
   h1 {
