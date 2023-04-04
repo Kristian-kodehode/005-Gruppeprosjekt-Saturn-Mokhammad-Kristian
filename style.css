@@ -832,13 +832,13 @@ Saturn Historical Events spread across quite a small footprint.
 .section-4 ul {
   list-style: none;
   list-style-image: url(images/saturn\ ul\ icon.svg);
+  padding-bottom: 250px;
 }
 
 .section-4 li {
   color: var(--satur-white);
   font-size: 18px;
   margin-bottom: 24px;
-
 }
 
 .section-4 {
@@ -1034,6 +1034,5 @@ while hovering, and also continue when not hovering.
   .astronaut-w-hand {
     width: 150px;
     margin-left: 30px;
-
   }
 }
