@@ -142,7 +142,6 @@ header {
   z-index: 10;
 }
 
-
 nav {
   height: 80px;
   display: flex;
@@ -157,44 +156,41 @@ nav {
 .logoanim {
   width: 50px;
   height: 50px;
-  border: 3px solid var(--satur-white);
+  border: 2px solid var(--satur-white);
   border-right: 1px solid transparent;
   animation: animlogo 7s linear infinite;
   z-index: -1;
   margin-left: 14px;
   margin-bottom: 10px;
-  
-  }
-  
-  .logoanim ,.line1 {
-    position: absolute;
-    border-radius: 50%;
-  
-  }
-  
-  .line1 {
-    width: 45px;
-    height: 45px;
-    border: 3px solid var(--saturn-sand);
-    border-right: 4px solid transparent;
-    opacity: 0.9;
-    animation: animlogo 4s linear infinite;
-  }
-  
-  
-  @keyframes animlogo {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform:  rotate(360deg);
-    }
+}
+
+.logoanim,
+.line1 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.line1 {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--saturn-sand);
+  border-right: 4px solid transparent;
+  opacity: 0.9;
+  animation: animlogo 4s linear infinite;
+}
+
+@keyframes animlogo {
+  0% {
+    transform: rotate(0deg);
   }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 #logo {
-  margin-left: 20px;
+  margin-left: 80px;
   width: 130px;
 }
 
@@ -269,7 +265,6 @@ Text is set to position absolute to be able to have it layed over the Saturn pla
   margin-left: auto;
 }
 
-
 /* Section0 end */
 
 /* SECTION 1 Extreme Pressure : Start -
@@ -287,7 +282,6 @@ Image is set to width 100% to cover the entire width of the page.
   padding: 8px;
   font-size: 16px;
   color: var(--satur-white);
-  border-bottom: 8px solid var(--saturn-sand) ;
 }
 
 img {
@@ -346,7 +340,7 @@ each line of the ring has its own parameters, both in time and sizes.
 .imgsat,
 .saturn {
   position: absolute;
-  transform: translate(-90%,0);
+  transform: translate(-90%, 0);
   height: 220px;
   width: 220px;
   border-radius: 50%;
@@ -508,7 +502,7 @@ each line of the ring has its own parameters, both in time and sizes.
 }
 
 .ast11 {
-  border: 4px solid var(--satur-white);;
+  border: 4px solid var(--satur-white);
   border-top: 4px solid transparent;
   opacity: 0.4;
   left: -55px;
@@ -693,12 +687,10 @@ in-depth information about Saturn.Added a hover effects to fit on the page
   display: flex;
   gap: 44px;
   margin-bottom: 80px;
-
 }
 
 .cards:hover > .card:not(:hover) {
-  filter:  brightness(0.5) blur(10px);
-
+  filter: brightness(0.2) blur(3px);
 }
 
 .card {
@@ -706,22 +698,18 @@ in-depth information about Saturn.Added a hover effects to fit on the page
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 432px;
   min-height: 500px;
-  border: 2px solid var(--satur-white);
+  border: 1.5px solid var(--satur-white);
   border-radius: 8px;
   padding: 16px 16px 48px 16px;
   transition: 0.9s;
   cursor: pointer;
 }
 
-
 .card:hover {
   z-index: 12;
-  width: 800px;
-  height: 800px;
-  border: 2px solid var(--saturn-sand);
+  border: 1.5px solid var(--saturn-sand);
   background-image: linear-gradient(to bottom right, rgb(23, 23, 23), black);
 }
-
 
 .card-image {
   width: 100%;
@@ -922,7 +910,13 @@ while hovering, and also continue when not hovering.
 }
 /*  FOOTER End */
 
+/* RESPONSIVE DESIGN ADJUSTMENTS - Media query */
+
 @media (max-width: 761px) {
+  h1 {
+    font-size: 48px;
+  }
+
   nav {
     font-size: 10px;
   }
@@ -931,7 +925,11 @@ while hovering, and also continue when not hovering.
     margin: 0px;
   }
 
-  .textmain  {
+  .items {
+    gap: 1rem;
+  }
+
+  .textmain {
     left: 20px;
     animation-name: section0-animation;
   }
@@ -993,7 +991,6 @@ while hovering, and also continue when not hovering.
 
   .asteroid {
     margin-right: 300px;
-
   }
 
   table {
@@ -1009,15 +1006,12 @@ while hovering, and also continue when not hovering.
 
   .undertext {
     margin-top: 350px;
-  }
-
-  .textExample h3 {
-    font-size: 10px;
+    display: block;
   }
 
   .textExample p {
-    font-size: 16px;
-
+    /* font-size: 16px; */
+    margin-bottom: 32px;
   }
 
   .asteroid {
@@ -1025,14 +1019,12 @@ while hovering, and also continue when not hovering.
   }
 
   .cards {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-left: 30px;
   }
 
-  .card:hover {
-  width: 450px;
-  height: 900px;
+  .card {
+    margin-top: 16px;
   }
 
   .planetsizes {
