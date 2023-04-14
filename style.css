@@ -279,7 +279,7 @@ Text is set to position absolute to be able to have it layed over the Saturn pla
 
 /* SECTION 1 Extreme Pressure : Start -
 Used grid system to spread out the info, which was easier than creating flexbox.
-Image is set to width 100% to cover the entire width of the page.
+
 */
 .grid-container {
   display: grid;
@@ -301,7 +301,6 @@ img {
 
 /* Section 2 Planet Numbers : start -
 Used table to make the info next to the image..
-The planet has a hover effect where is grows in size when hover.
 */
 table {
   /* font-family: "Roboto Mono", monospace; */
@@ -768,9 +767,7 @@ eachother while hovering */
   0% {
     bottom: 0px;
   }
-  /* 50% {
-    bottom: 20px;
-  } */
+
   100% {
     bottom: 12px;
   }
@@ -890,7 +887,7 @@ from transparent to black.
 /* SECTION 4 End  */
 
 /* FOOTER Start -
-The footer contains a horizon image of the earth below Saturn.
+Image is set to width 100% to cover the entire width of the page.
 And the floating astronaut hovers with a animation + transform set to infinite.
 He also gives you a peace sign when hovering over him. We did this by putting
 astronaut and icon inside a class so they stick together, set icon to opacity 0 by
